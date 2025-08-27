@@ -7,7 +7,7 @@
 
   if (isReducedMotion) return;
 
-  const nekoEl = document.createElement("div");
+  const nekoEl = document.createElement("oneko");
 
   let nekoPosX = 32;
   let nekoPosY = 32;
