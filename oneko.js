@@ -95,11 +95,13 @@
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
+
+    let nekoFile = "https://raw.githubusercontent.com/DevPogGoogle/oneko-revolt-i-think/refs/heads/main/oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
       nekoFile = curScript.dataset.cat
     }
-    nekoEl.style.backgroundImage = `url(https://raw.githubusercontent.com/DevPogGoogle/oneko-revolt-i-think/refs/heads/main/oneko.gif)`;
+    nekoEl.style.backgroundImage = `url(${nekoFile})`;
 
     document.body.appendChild(nekoEl);
 
